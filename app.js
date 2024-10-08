@@ -1,5 +1,17 @@
-var a = 1;
-var b = 2;
-var c = a + b;
+function Person(firstname, lastname){
 
-console.log(c);
+    this.firstname = firstname;
+    this.lastname = lastname;
+
+}
+
+Person.prototype.greet = function(){
+    console.log('Hello, ' + this.firstname + ' ' + this.lastname);
+};
+
+var john = new Person('John', 'Doe');
+
+john.greet();
+
+var jane = new Person('Jane','Doe');
+jane.greet();
