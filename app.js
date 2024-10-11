@@ -1,17 +1,4 @@
-function Person(firstname, lastname){
+var greet = require('./greet');
 
-    this.firstname = firstname;
-    this.lastname = lastname;
-
-}
-
-Person.prototype.greet = function(){
-    console.log('Hello, ' + this.firstname + ' ' + this.lastname);
-};
-
-var john = new Person('John', 'Doe');
-
-john.greet();
-
-var jane = new Person('Jane','Doe');
-jane.greet();
+greet.english();
+greet.spanish();
